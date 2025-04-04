@@ -33,12 +33,12 @@ Tecnologias Utilizadas
 •	Conceitos de estrutura de dados
 •	Lógica de fila (FIFO) e array dinâmico
 ________________________________________
-Objetivo Acadêmico
+Objetivo Acadêmico:
 Este projeto não é uma solução para produção, mas sim um exercício acadêmico para praticar estruturas de dados.
 Foi criado com o propósito de consolidar os conhecimentos sobre filas dinâmicas, usando uma situação real como inspiração.
 ________________________________________
-Autora
-Desenvolvido por Maria Eduarda Alexandre Aguiar
+Autora:
+Desenvolvido por Maria Eduarda Alexandre Aguiar.
 Disciplina de Estrutura de Dados — 2025/1
 ________________________________________
 
