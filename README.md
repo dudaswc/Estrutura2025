@@ -1,5 +1,5 @@
 Mentoria para Mulheres na Tecnologia.
-Descrição do Projeto.
+Descrição do Projeto:
 Este projeto foi desenvolvido como parte da disciplina de Estrutura de Dados, com o objetivo de aplicar o conceito de fila (FIFO) em um contexto realista: um programa de mentoria voltado para incentivar a participação de mulheres na área da tecnologia.
 ________________________________________
 Problema Proposto
