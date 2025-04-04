@@ -2,7 +2,7 @@ Mentoria para Mulheres na Tecnologia.
 Descrição do Projeto:
 Este projeto foi desenvolvido como parte da disciplina de Estrutura de Dados, com o objetivo de aplicar o conceito de fila (FIFO) em um contexto realista: um programa de mentoria voltado para incentivar a participação de mulheres na área da tecnologia.
 ________________________________________
-Problema Proposto
+Problema Proposto:
 Uma organização sem fins lucrativos criou um programa de mentoria para mulheres na tecnologia.
 O sistema precisa gerenciar uma fila de participantes, garantindo que todas sejam chamadas na ordem em que se inscreveram.
 ________________________________________
@@ -12,7 +12,7 @@ Requisitos Atendidos
 •	Função para chamar a próxima participante, respeitando a ordem de chegada (FIFO).
 •	Simulação prática com cinco inscrições e cinco chamadas.
 ________________________________________
-Estrutura do Projeto
+Estrutura do Projeto:
 PersonalArray
 Classe que simula um array dinâmico, com métodos para:
 •	Inserir elementos
