@@ -12,8 +12,10 @@ Requisitos:
 # Classe para armazenar participantes da mentoria usando um array dinâmico
 class PersonalArray:
     SIZE = 5
-    insertPosition = 0
-    elements = [None] * SIZE
+
+    def __init__(self):
+        self.insertPosition = 0
+        self.elements = [None] * self.SIZE
 
     def isEmpty(self):
         return self.size() == 0
@@ -48,12 +50,13 @@ class PersonalArray:
     def removePosition(self, position):
         if position < 0 or position >= self.insertPosition:
             print("Posição inválida!")
-            return ""
+            return None
         removedElement = self.elements[position]
         index = position
         while index < self.insertPosition - 1:
             self.elements[index] = self.elements[index + 1]
             index += 1
+        self.elements[self.insertPosition - 1] = None
         self.insertPosition -= 1
         return removedElement
     
@@ -79,18 +82,21 @@ class PersonalArray:
 
 # Implementação da fila para o programa de mentoria
 class MentoriaQueue:
-    list = PersonalArray()
+    def __init__(self):
+        self.list = PersonalArray()
 
-    # Adiciona uma participante na fila
+    # Adiciona uma participante no final da fila
     def inscrever_participante(self, nome):
-        self.list.insertAt(0, nome)
+        self.list.append(nome) 
         print(f"{nome} foi inscrita na mentoria.")
 
-    # Remove a participante que chegou primeiro (FIFO)
+    # Remove a participante mais antiga (FIFO)
     def chamar_para_mentoria(self):
-        participante = self.list.removePosition(self.list.size() - 1)
-        if participante:
-            print(f"Chamando {participante} para a mentoria.")
+        if self.list.isEmpty():
+            print("Nenhuma participante na fila.")
+            return None
+        participante = self.list.removePosition(0)  
+        print(f"Chamando {participante} para a mentoria.")
         return participante
 
 
@@ -104,12 +110,11 @@ mentoria.inscrever_participante("Fernanda")
 mentoria.inscrever_participante("Ana")
 mentoria.inscrever_participante("Beatriz")
 
-# Chamando participantes para mentoria (seguindo a ordem de chegada)
+# Chamando participantes para mentoria 
 print(mentoria.chamar_para_mentoria())  # Mariana
 print(mentoria.chamar_para_mentoria())  # Carla
 print(mentoria.chamar_para_mentoria())  # Fernanda
 print(mentoria.chamar_para_mentoria())  # Ana
 print(mentoria.chamar_para_mentoria())  # Beatriz
-
 
 
